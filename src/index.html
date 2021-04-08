@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>MatchDay.ai</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="scripts/heatmap.js"></script>
+	<script src="scripts/heatmap2.js"></script>
+	<!--<script  src="scripts/CesiumHeatmap.js"></script>-->
+	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+-->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link href="css/styleme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/master.css">
+
+	<link rel="stylesheet" href="css/cool-navbars.css">
+
+	<script src="scripts/player_heatmap7.js"></script>
+	<script src="scripts/rightclick_fn.js"></script>
+	<script src="scripts/image_upload.js"></script>
+
+	<script src="scripts/submitformation.js"></script>
+
+	<link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="line"></div>
+	<div class="line"></div>
+	<div class="line"></div>
+	<div class="line"></div>
+
+
+	<nav id="main-nav">
+		<ul class="menu">
+			<li class="logo"><a href="#">MatchDay.ai</a></li>
+			<li>PLAYER ANALYSIS</li>
+		</ul>
+		<ul class="menu">
+			<li class="item button secondary"><a href="index.html">Home</a></li>
+			<li class="item button secondary"><a href="pointmap.html">Point Map</a></li>
+			<li class="item button secondary"><a href="#passes">Formations</a></li>
+			<li class="item button secondary"><a href="#skateboarding">Heatmap</a></li>
+			<li class="item button secondary"><a href="goals.html">Goals</a></li>
+			<li class="item button secondary"><a href="distance.html">Distance</a></li>
+
+		</ul>
+    </nav>
+
+	
+
+
+	<section id="passes" data-tab="#passes">
+		<div> Team 1</div>
+		<br><br>
+		<div>Player 1</div>
+		<div>Name</div>
+		<input type="text" id="t1p1name">
+		<div>ID</div>
+		<input type="text" id="t1p1ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt1">
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos1">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img1" accept="image/*" />
+
+		<br><br>
+		<div>Player 2</div>
+		<div>Name</div>
+		<input type="text" id="t1p2name">
+		<div>ID</div>
+		<input type="text" id="t1p2ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt2">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos2">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img2" accept="image/*" />
+
+		<br><br>
+		<div>Player 3</div>
+		<div>Name</div>
+		<input type="text" id="t1p3name">
+		<div>ID</div>
+		<input type="text" id="t1p3ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt3">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos3">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img3" accept="image/*" />
+
+		<br><br>
+		<div>Player 4</div>
+		<div>Name</div>
+		<input type="text" id="t1p4name">
+		<div>ID</div>
+		<input type="text" id="t1p4ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt4">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos4">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img4" accept="image/*" />
+
+		<br><br>
+		<div>Player 5</div>
+		<div>Name</div>
+		<input type="text" id="t1p5name">
+		<div>ID</div>
+		<input type="text" id="t1p5ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt5">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos5">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img5" accept="image/*" />
+
+		<br><br>
+		<div>Player 6</div>
+		<div>Name</div>
+		<input type="text" id="t1p6name">
+		<div>ID</div>
+		<input type="text" id="t1p6ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt6">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos6">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img6" accept="image/*" />
+
+		<br><br>
+		<div>Player 7</div>
+		<div>Name</div>
+		<input type="text" id="t1p7name">
+		<div>ID</div>
+		<input type="text" id="t1p7ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt7">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos7">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img7" accept="image/*" />
+
+		<br><br>
+		<div>Player 8</div>
+		<div>Name</div>
+		<input type="text" id="t1p8name">
+		<div>ID</div>
+		<input type="text" id="t1p8ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt8">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos8">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img8" accept="image/*" />
+
+		<br><br>
+		<div>Player 9</div>
+		<div>Name</div>
+		<input type="text" id="t1p9name">
+		<div>ID</div>
+		<input type="text" id="t1p9ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt9">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos9">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img9" accept="image/*" />
+
+		<br><br>
+		<div>Player 10</div>
+		<div>Name</div>
+		<input type="text" id="t1p10name">
+		<div>ID</div>
+		<input type="text" id="t1p10ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt10">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos10">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img10" accept="image/*" />
+
+		<br><br>
+		<div>Player 11</div>
+		<div>Name</div>
+		<input type="text" id="t1p11name">
+		<div>ID</div>
+		<input type="text" id="t1p11ID">
+		<div> Line </div>
+		<select name="defesrow" id="t1opt11">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t1pos11">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t1img11" accept="image/*" />
+
+
+		<br><br>
+		<div> Team 2</div>
+		<br><br>
+		<div>Player 1</div>
+		<div>Name</div>
+		<input type="text" id="t2p1name">
+		<div>ID</div>
+		<input type="text" id="t2p1ID">
+		<div> Line </div>
+		<select name="defesrow" id="t2opt1">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos1">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img1" accept="image/*" />
+
+
+		<br><br>
+		<div>Player 2</div>
+		<div>Name</div>
+		<input type="text" id="t2p2name">
+		<div>ID</div>
+		<input type="text" id="t2p2ID">
+		<div> Line </div>
+		<select name="defesrow" id="t2opt2">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos2">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img2" accept="image/*" />
+
+		<br><br>
+		<div>Player 3</div>
+		<div>Name</div>
+		<input type="text" id="t2p3name">
+		<div>ID</div>
+		<input type="text" id="t2p3ID">
+		<div> Line </div>
+		<select name="defesrow" id="t2opt3">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos3">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img3" accept="image/*" />
+
+		<br><br>
+		<div>Player 4</div>
+		<div>Name</div>
+		<input type="text" id="t2p4name">
+		<div>ID</div>
+		<input type="text" id="t2p4ID">
+		<div> Line </div>
+		<select name="defesrow" id="t2opt4">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos4">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img4" accept="image/*" />
+
+		<br><br>
+		<div>Player 5</div>
+		<div>Name</div>
+		<input type="text" id="t2p5name">
+		<div>ID</div>
+		<input type="text" id="t2p5ID">
+
+		<div> Line </div>
+		<select name="defesrow" id="t2opt5">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos5">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img5" accept="image/*" />
+
+		<br><br>
+		<div>Player 6</div>
+		<div>Name</div>
+		<input type="text" id="t2p6name">
+		<div>ID</div>
+		<input type="text" id="t2p6ID">
+		<div> Line </div>
+		<select name="defesrow" id="t2opt6">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos6">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img6" accept="image/*" />
+
+		<br><br>
+		<div>Player 7</div>
+		<div>Name</div>
+		<input type="text" id="t2p7name">
+		<div>ID</div>
+		<input type="text" id="t2p7ID">
+		<div> Line </div>
+
+		<select name="defesrow" id="t2opt7">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos7">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img7" accept="image/*" />
+
+		<br><br>
+		<div>Player 8</div>
+		<div>Name</div>
+		<input type="text" id="t2p8name">
+		<div>ID</div>
+		<input type="text" id="t2p8ID">
+		<div> Line </div>
+		<select name="defesrow" id="t2opt8">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos8">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img8" accept="image/*" />
+
+		<br><br>
+		<div>Player 9</div>
+		<div>Name</div>
+		<input type="text" id="t2p9name">
+		<div>ID</div>
+		<input type="text" id="t2p9ID">
+		<div> Line </div>
+		<select name="defesrow" id="t2opt9">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos9">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img9" accept="image/*" />
+
+		<br><br>
+		<div>Player 10</div>
+		<div>Name</div>
+		<input type="text" id="t2p10name">
+		<div>ID</div>
+		<input type="text" id="t2p10ID">
+		<div> Line </div>
+		<select name="defesrow" id="t2opt10">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos10">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img10" accept="image/*" />
+
+		<br><br>
+		<div>Player 11</div>
+		<div>Name</div>
+		<input type="text" id="t2p11name">
+		<div>ID</div>
+		<input type="text" id="t2p11ID">
+		<div> Line </div>
+		<select name="defesrow" id="t2opt11">
+
+			<option value="0">Goal Keeper</option>
+			<option value="1">Defence Row</option>
+			<option value="2">Defence Mid Field</option>
+			<option value="3">Mid Field</option>
+			<option value="4">Attacking Mid Field</option>
+			<option value="5">Attacking Row</option>
+		</select>
+		<div> Position </div>
+		<select name="defesrow" id="t2pos11">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div> Image </div>
+		<input type="file" id="t2img11" accept="image/*" />
+
+		<br><br>
+		<button id="subm">SUBMIT FORMATION</button>
+
+		</div>
+
+		</form>
+
+	</section>
+
+
+
+
+
+	<section id="skateboarding" data-tab="#skateboarding">
+		<div id="screen">
+
+			<div id="overlay_box">
+				<div id="action_box">
+					<div class="wrap">
+						<div id="actions"></div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="Rectangle_video">
+				<div style="position:relative; height:100%; width:100%;" class="heatmap" id="heats"></div>
+
+				<!--  <video id="vid" width="100%"><source src="../static/videos/c2.jpg"></video>-->
+				<div id="priorities"></div>
+				<div id="playerBoxes"></div>
+			</div>
+
+			<div id="whitespac">
+
+
+
+
+			</div>
+			<div id="Rectangle_progress_bar">
+				<div id="progress_bar">
+				</div>
+				<div id="sections">
+					<button id="clear">Clear Heatmap</button>
+
+					<div class="price-slider"><span>From
+							<input type="number" value="0" min="0" max="90" /> To
+							<input type="number" value="45" min="0" max="90" /></span>
+						<input value="0" min="0" max="90" step="1" type="range" />
+						<input value="45" min="0" max="90" step="1" type="range" />
+						<svg width="100%" height="24">
+							<line x1="4" y1="0" x2="300" y2="0" stroke="#212121" stroke-width="12"
+								stroke-dasharray="1 28"></line>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<!--
+      <div id="controls">
+          <h1 class="Speed">Speed</h1>
+          <img class="Shape1" id="speed_dec" src="../static/img/fast_rewind.png"></img>
+          <img class="Shape1" id="speed_inc" src="../static/img/fast_forward.png"></img>
+          <div id="speed_box"><div id="speed_container"><p>X</p><p id="speed_text">1</p></div></div>
+          <div class=vl id="vl1"></div>
+          <img class="Path1" id="volume" src="../static/img/volume.png"></img>
+          <!-- <div id="slider_box">
+            <input type="range" min="1" max="100" value="50" id="vol_slider" id="myRange">
+          </div> -->
+			<!--          <img class="Path1" id="play" src="../static/img/play.png"></img>
+          <div class=vl id="vl2"></div>
+          <h1 class="Playback">Playback</h1>
+          <img class="Shape2" id="rewind" src="../static/img/10s.png"></img>
+          <img class="Shape1" id="previous" src="../static/img/previous.png"></img>
+          <img class="Shape1" id="next" src="../static/img/next.png"></img>
+      </div>
+-->
+			<div id="sidebar">
+				<div id="team1" class="teambox">
+					<h1 id="team1label">Team 1</h1>
+					<div class="lineup">
+						<div class="gkrow lineuprow" id="t1_gk_line">
+							<div class="playerdataholder" id="p1"><img src="images/messi.png" class="playericon">
+								<p class="playername">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+						<div class="defeserow lineuprow" id="t1_def_line">
+							<div class="playerdataholder" id="p2"><img src="images/messi.png" class="playericon">
+								<p class="playername">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p3" value="3"><img src="images/messi.png"
+									class="playericon" id="pi3">
+								<p class="playername" id="pp3">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p4" value="3"><img src="images/messi.png"
+									class="playericon" id="pi4">
+								<p class="playername" id="pp4">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p5" value="3"><img src="images/messi.png"
+									class="playericon" id="pi5">
+								<p class="playername" id="pp5">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p6" value="3"><img src="images/messi.png"
+									class="playericon" id="pi6">
+								<p class="playername" id="pp6">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+
+						</div>
+						<div class="defendingmidfieldrow lineuprow" id="t1_def_mid_line">
+							<div class="playerdataholder" id="p7" value="3"><img src="images/messi.png"
+									class="playericon" id="pi7">
+								<p class="playername" id="pp7">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p8" value="3"><img src="images/messi.png"
+									class="playericon" id="pi8">
+								<p class="playername" id="pp8">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p9" value="3"><img src="images/messi.png"
+									class="playericon" id="pi9">
+								<p class="playername" id="pp9">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p10" value="3"><img src="images/messi.png"
+									class="playericon" id="pi10">
+								<p class="playername" id="pp10">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p11" value="3"><img src="images/messi.png"
+									class="playericon" id="pi11">
+								<p class="playername" id="pp11">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+						<div class="midfieldrow lineuprow" id="t1_mid_line">
+							<div class="playerdataholder" id="p12" value="3"><img src="images/messi.png"
+									class="playericon" id="pi12">
+								<p class="playername" id="pp12">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p13" value="3"><img src="images/messi.png"
+									class="playericon" id="pi13">
+								<p class="playername" id="pp13">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p14" value="3"><img src="images/messi.png"
+									class="playericon" id="pi14">
+								<p class="playername" id="pp14">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p15" value="3"><img src="images/messi.png"
+									class="playericon" id="pi15">
+								<p class="playername" id="pp15">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p16" value="3"><img src="images/messi.png"
+									class="playericon" id="pi16">
+								<p class="playername" id="pp16">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+						<div class="attackingmidfieldrow lineuprow" id="t1_at_mid_line">
+							<div class="playerdataholder" id="p17" value="3"><img src="images/messi.png"
+									class="playericon" id="pi17">
+								<p class="playername" id="pp17">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p18" value="3"><img src="images/messi.png"
+									class="playericon" id="pi18">
+								<p class="playername" id="pp18">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p19" value="3"><img src="images/messi.png"
+									class="playericon" id="pi19">
+								<p class="playername" id="pp19">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p20" value="3"><img src="images/messi.png"
+									class="playericon" id="pi20">
+								<p class="playername" id="pp20">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p21" value="3"><img src="images/messi.png"
+									class="playericon" id="pi21">
+								<p class="playername" id="pp21">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+						<div class="forwardrow lineuprow" id="t1_at_line">
+							<div class="playerdataholder" id="p22" value="3"><img src="images/messi.png"
+									class="playericon" id="pi22">
+								<p class="playername" id="pp22">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p23" value="3"><img src="images/messi.png"
+									class="playericon" id="pi23">
+								<p class="playername" id="pp23">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p24" value="3"><img src="images/messi.png"
+									class="playericon" id="pi24">
+								<p class="playername" id="pp24">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p25" value="3"><img src="images/messi.png"
+									class="playericon" id="pi25">
+								<p class="playername" id="pp25">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p26" value="3"><img src="images/messi.png"
+									class="playericon" id="pi26">
+								<p class="playername" id="pp26">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="hl"></div>
+				<div id="team2" class="teambox">
+					<h1 id="team2label">Team 2</h1>
+					<div class="lineup">
+						<div class="forwardrow lineuprow" id="t2_at_line">
+							<div class="playerdataholder" id="p27" value="3"><img src="images/messi.png"
+									class="playericon" id="pi27">
+								<p class="playername" id="pp27">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p28" value="3"><img src="images/messi.png"
+									class="playericon" id="pi28">
+								<p class="playername" id="pp28">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p29" value="3"><img src="images/messi.png"
+									class="playericon" id="pi29">
+								<p class="playername" id="pp29">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p30" value="3"><img src="images/messi.png"
+									class="playericon" id="pi30">
+								<p class="playername" id="pp30">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p31" value="3"><img src="images/messi.png"
+									class="playericon" id="pi31">
+								<p class="playername" id="pp31">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+						<div class="attackingmidfieldrow lineuprow" id="t2_at_mid_line">
+							<div class="playerdataholder" id="p32" value="3"><img src="images/messi.png"
+									class="playericon" id="pi32">
+								<p class="playername" id="pp32">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p33" value="3"><img src="images/messi.png"
+									class="playericon" id="pi33">
+								<p class="playername" id="pp33">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p34" value="3"><img src="images/messi.png"
+									class="playericon" id="pi34">
+								<p class="playername" id="pp34">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p35" value="3"><img src="images/messi.png"
+									class="playericon" id="pi35">
+								<p class="playername" id="pp35">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p36" value="3"><img src="images/messi.png"
+									class="playericon" id="pi36">
+								<p class="playername" id="pp36">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+						<div class="midfieldrow lineuprow" id="t2_mid_line">
+							<div class="playerdataholder" id="p37" value="3"><img src="images/messi.png"
+									class="playericon" id="pi37">
+								<p class="playername" id="pp37">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p38" value="3"><img src="images/messi.png"
+									class="playericon" id="pi38">
+								<p class="playername" id="pp38">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p39" value="3"><img src="images/messi.png"
+									class="playericon" id="pi39">
+								<p class="playername" id="pp39">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p40" value="3"><img src="images/messi.png"
+									class="playericon" id="pi40">
+								<p class="playername" id="pp40">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p41" value="3"><img src="images/messi.png"
+									class="playericon" id="pi41">
+								<p class="playername" id="pp41">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+						<div class="defendingmidfieldrow lineuprow" id="t2_def_mid_line">
+							<div class="playerdataholder" id="p42" value="3"><img src="images/messi.png"
+									class="playericon" id="pi42">
+								<p class="playername" id="pp42">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p43" value="3"><img src="images/messi.png"
+									class="playericon" id="pi43">
+								<p class="playername" id="pp43">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p44" value="3"><img src="images/messi.png"
+									class="playericon" id="pi44">
+								<p class="playername" id="pp44">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p45" value="3"><img src="images/messi.png"
+									class="playericon" id="pi45">
+								<p class="playername" id="pp45">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p46" value="3"><img src="images/messi.png"
+									class="playericon" id="pi46">
+								<p class="playername" id="pp46">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+						<div class="defeserow lineuprow" id="t2_def_line">
+							<div class="playerdataholder" id="p47" value="3"><img src="images/messi.png"
+									class="playericon" id="pi47">
+								<p class="playername" id="pp47">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p48" value="3"><img src="images/messi.png"
+									class="playericon" id="pi48">
+								<p class="playername" id="pp48">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p49" value="3"><img src="images/messi.png"
+									class="playericon" id="pi49">
+								<p class="playername" id="pp49">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p50" value="3"><img src="images/messi.png"
+									class="playericon" id="pi50">
+								<p class="playername" id="pp50">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+							<div class="playerdataholder" id="p51" value="3"><img src="images/messi.png"
+									class="playericon" id="pi51">
+								<p class="playername" id="pp51">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+						<div class="gkrow lineuprow" id="t2_gk_line">
+							<div class="playerdataholder" id="p52" value="3"><img src="images/messi.png"
+									class="playericon" id="pi52">
+								<p class="playername" id="pp52">Lionel Messi</p>
+								<p class="playerpos">(CF)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--<div id="actionList">
+        <div class="actionOption" data-action="Short Pass"><p data-action="Short Pass">&ensp;<img data-action="Short Pass" class="shortpass" src="./static/img/shortpass.png" />&ensp;Short Pass</p></div>
+        <div class="Rule"></div>
+        <div class="actionOption" data-action="Goal"><p data-action="Goal">&ensp;<img data-action="Goal" class="goal" src="./static/img/goal.png" />&ensp;Goal</p></div>
+        <div class="Rule"></div>
+        <div class="actionOption" data-action="Long Pass"><p data-action="Long Pass">&ensp;<img  data-action="Long Pass"class="longpass" src="./static/img/longpass.png" />&ensp;Long Pass</p></div>
+        <div class="Rule"></div>
+        <div class="actionOption" data-action="Dribble"><p data-action="Dribble">&ensp;<img data-action="Dribble" class="dribble" src="./static/img/dribble.png" />&ensp;Dribble</p></div>
+        <div class="Rule"></div>
+        <div class="actionOption" data-action="Tackle"><p data-action="Tackle">&ensp;<img data-action="Tackle" class="tackle" src="./static/img/tackle.png" />&ensp;Tackle</p></div>
+        <div class="Rule"></div>
+        <div class="actionOption" data-action="Interception"><p data-action="Interception">&ensp;<img data-action="Interception" class="interception" src="./static/img/interception.png" />&ensp;Interception</p></div>
+      </div>
+-->
+			<button id="teamheatmap1">Team1heatmap</button>
+			<button id="teamheatmap2">Team2heatmap</button>
+			<button id="teamheatmap">Teamheatmap</button>
+
+
+	</section>
+
+
+	<script src="scripts/scrollspy.js"></script>
+	<script src="scripts/tabs.js"></script>
+	<!---- <script src="scripts/pointmap.js"></script> -->
+
+</body>
+
+</html>
